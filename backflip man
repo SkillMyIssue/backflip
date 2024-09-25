@@ -83,5 +83,4 @@ notifSound.PlayOnRemove = true
 notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 
-
--- This script sets the player's jump power to the default value -- Get the player and character local player = game.Players.LocalPlayer -- Wait until the character is loaded player.CharacterAdded:Connect(function(character) -- Get the Humanoid component of the character local humanoid = character:WaitForChild("Humanoid") -- Set the Jump Power to the default value (50) humanoid.JumpPower = 50 print("enjoy the backflips") end)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
